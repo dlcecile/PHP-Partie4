@@ -1,16 +1,14 @@
 <?php
-$page = "exercice5";
-include '../header.php';
+  $page = "exercice5";
+  include '../header.php';
+    $age = 20;
+    $text = 'Joyeux anniversaire';
+        function concat(int $p1, string $p2){
+        return 'Tu as ' .$p1. ' ans ' .$p2. ' Youpi!!!!';
+    }
 ?>
 <p>Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui renvoit la concaténation de ces deux paramètres.</p>
-<?php
-  $age = 20;
-  $text = 'Joyeux anniversaire';
-      function addition($p1, $p2){
-      echo 'Tu as ' .$p1. ' ans ' .$p2. ' Youpi!!!!';
-    }
-    addition($age,$text);
-?>
+<p><?= concat($age, $text); ?></p>
 <?php
 include '../footer.php';
  ?>
